@@ -30,3 +30,9 @@
 
 * 리스트의 합계와 평균
   → Total = **Sum**(리스트 이름) / average = **len**(리스트 이름) 
+
+** 리스트와 튜플의 차이 (List / Tuple)
+List의 형태 : [ ]
+Tuple의 형태 : ( ) / 소괄호가 없는 경우도 type : Tuple 
+→ List는 요소를 수정할 수 있지만, list[0] = 바꿀 내용
+→ Tuple의 요소는 수정할 수 없음, tuple[0] = 바꿀 내용
