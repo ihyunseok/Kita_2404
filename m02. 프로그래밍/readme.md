@@ -75,7 +75,7 @@ print(result)
 result = s1.symmetric_difference(s2)
 print(result)
 
-
+여기까지 
 
 
 
