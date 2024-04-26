@@ -1,12 +1,12 @@
 
-1일차 
+**1일차**
   Hugging Face / 오픈소스 모아놓은 사이트
   Upstage 
   * AI Hub : AI 개발지원 > AI바우처 지원 에서 업체 확인 가능
   * 한국데이터산업진흥원 : 데이터 바우처 지원사업 확인 가능
   * Nipa
 
-2일차
+**2일차**
 \t : Tab 
 \n : 행 바꿈 (명령어 앞에는 못 씀(만약에 쓸 경우 (~~, '\n'), 수식하는 문어 앞에다가 쓸 수 있음
 
@@ -25,6 +25,7 @@
 * insert : 원하는 내용을 원하는 위치에 넣을 수 있음
   → list.insert(**삽입하려는 인덱스 번호, 삽입하려는 내용**) 
 
+**3일차**
 * 리스트의 최댓값 / 최솟값
   → 다른 리스트 이름 = Max(해당 리스트이름) / 다른 리스트 이름 = Min(해당 리스트 이름)
 
@@ -37,4 +38,61 @@ Tuple의 형태 : ( ) / 소괄호가 없는 경우도 type : Tuple
 → List는 요소를 수정할 수 있지만, list[0] = 바꿀 내용
 → Tuple의 요소는 수정할 수 없음, tuple[0] = 바꿀 내용
 
-* 딕셔너리 형태 : { 키 : 값 , 키 : 값 } 
+* 딕셔너리 형태 : { keys : values , keys : values }
+→ 딕셔너리이름.keys()
+→ 딕셔너리이름.values()
+→ 딕셔너리이름.items() → keys + values
+
+* set 을 사용할 경우 형태가 딕셔너리 형태로 바뀌기 때문에 list 로 바꿔줘야한다.
+  
+s1 = {10,20,30,40,50}
+s2 = {40,70,80,90,100}
+
+# 합집합 연산자 | : Shift + \
+result = s1 | s2
+print(result)
+
+# 합집합 연산자 union
+result = s1.union(s2)
+print(result)
+
+# 교집합 연산자 & : Shift + 7
+result = s1 & s2
+print(result)
+
+result = s1.intersection(s2)
+print(result)
+
+# 차집합
+result = s1 - s2
+print(result)
+result = s2.difference(s1)
+print(result)
+
+# 대칭 차집합
+result = s1 ^ s2
+print(result)
+result = s1.symmetric_difference(s2)
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
