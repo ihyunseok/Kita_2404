@@ -29,7 +29,7 @@
   → 다른 리스트 이름 = Max(해당 리스트이름) / 다른 리스트 이름 = Min(해당 리스트 이름)
 
 * 리스트의 합계와 평균
-  → Total = **Sum**(리스트 이름) / average = **len**(리스트 이름) 
+  → Total = **Sum**(리스트 이름) / average = total / **len**(리스트 이름) 
 
 ** 리스트와 튜플의 차이 (List / Tuple)
 List의 형태 : [ ]
