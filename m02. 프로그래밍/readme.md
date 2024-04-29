@@ -83,13 +83,29 @@ print(result)
 result = s1.symmetric_difference(s2)
 print(result)
 
-여기까지 
+**4일차**
+
+# 사용자 함수의 형태
+1. 입력값, 출력값 모두 있는 경우
+2. 입력값만 있는 경우
+   → return를 두 개 사용하는 경우 else에 끝나는 return 결과값에는 None이 나온다. (결과 항목에 Print를 붙이는 경우) 
+4. 출력값만 있는 경우
+5. 입출력값이 없는 경우
 
 
+**소문자 / 대문자**
 
+- 소문자 : word = word.lower()
+- 대문자 : word = word.upper()
 
+# 복합 대입 연산자
 
++=  -=  *=  /=  %=
 
+**문자열 포멧**
+- %()d : 정수
+- %()f : 실수
+- %()s : string
 
 
 
