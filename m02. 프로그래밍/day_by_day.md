@@ -148,7 +148,7 @@ int = 10
 → sample은 중복 없이 요소를 선택 할 수 있음. 
 - random.choice(sequence) for i in range(k)
 
-
+```
 ** 5개의 과일 중 2개의 과일 랜덤으로 출력
 
 import random
@@ -157,7 +157,8 @@ print(random.sample(mylist, k=2))
 
 #### result
 ['orange', 'blueberry']
-
+```
+```
 ** 0에서 99 중 10개의 숫자를 랜덤으로 출력
 
 import random
@@ -166,7 +167,7 @@ print(data_list)
 
 #### result
 [75, 20, 98, 60, 5, 47, 4, 21, 90, 52]
-
+```
 # f-string 내에서 { } 사용 시 변수 뿐만 아니라 Python 표현식도 올 수 있음.
 
 ## 표현식(Expression)
