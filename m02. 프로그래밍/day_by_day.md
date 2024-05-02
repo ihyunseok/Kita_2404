@@ -190,3 +190,33 @@ tz = pytz.timezone('Asia/Seoul')
 now = datetime.datetime.now(tz)
 now_time = now.hour
 ```
+
+## 가위바위보 게임 코드
+```
+# Q. 3승할 때까지 진행하게 되는 가위바위보 게임 만들기
+
+import random
+
+com_hand = ['가위', '바위', '보']
+win_case = {'가위':'바위', '바위':'보', '보':'가위'}
+win_number = 0
+
+print('가위 바위 보 게임을 시작합니다. 3승 시 종료')
+print('!주의! : 오타는 패배로 간주됩니다.')
+
+while True:
+  com_select = com_hand[random.randint(0,2)]
+  you_select = input('가위바위보 입력 : ')
+  print(f'컴퓨터는 {com_select}입니다.')
+  if win_case[com_select] == you_select:
+      win_number += 1
+      print(f'이겼습니다. 현재 {win_number}승 입니다.')
+  else:
+    if com_select == you_select:
+      print('비겼습니다.')
+    else:
+      print('졌습니다.')
+  if win_number == 3:
+    print('3승을 달성하여 게임을 종료합니다.')
+    break
+```
