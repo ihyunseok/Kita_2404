@@ -138,11 +138,11 @@ int = 10
 * 함수의 이름 출력하기
 → print(함수이름._ _ name _ _ )
 
-# break / continue
+#### break / continue
 → break :해당 반복문의 조건에서 멈추고 진행
 → continue : 해당 반복문의 조건은 건너뛰고 진행
 
-# **6일차**
+**6일차**
 
 - random.sample(sequence, k) : sequence: 리스트, 집합, range() 등 random의 범위가 될 sequence 입력 / k: 반환될 리스트의 크기 입력\
 → sample은 중복 없이 요소를 선택 할 수 있음. 
@@ -154,7 +154,8 @@ int = 10
 import random
 mylist = ["apple", "banana", "cherry", "orange", "blueberry"]
 print(random.sample(mylist, k=2))
-# result
+
+#### result
 ['orange', 'blueberry']
 
 ** 0에서 99 중 10개의 숫자를 랜덤으로 출력
@@ -163,6 +164,28 @@ import random
 data_list = random.sample(range(100), 10)
 print(data_list)
 
-# result
+#### result
 [75, 20, 98, 60, 5, 47, 4, 21, 90, 52]
 
+# f-string 내에서 { } 사용 시 변수 뿐만 아니라 Python 표현식도 올 수 있음.
+
+## 표현식(Expression)
+- 하나 이상의 값, 변수, 연산자, 함수 호출 등을 조합하여 평가(evaluate)될 때 값을 생성하거나 반환하는 코드 
+- 표현식은 계산되어 값이 되는 모든 것을 의미
+
+## 표현식의 예시:
+- 수치 계산: 2 + 3는 5라는 값을 반환
+- 문자열 조합: "Hello " + "World"는 "Hello World"라는 문자열을 생성
+- 논리 연산: x > 5는 x의 값에 따라 True 또는 False를 반환
+- 함수 호출: sum([1, 2, 3])은 리스트의 합인 6을 반환
+- 조건식: x if x > 0 else -x는 x가 양수면 x를, 음수면 -x를 반환
+
+## 현재 시간 코드
+```
+import datetime
+import pytz
+
+tz = pytz.timezone('Asia/Seoul')
+now = datetime.datetime.now(tz)
+now_time = now.hour
+```
