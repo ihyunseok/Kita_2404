@@ -142,5 +142,10 @@ int = 10
 → break :해당 반복문의 조건에서 멈추고 진행
 → continue : 해당 반복문의 조건은 건너뛰고 진행
 
+**6일차**
 
+- random.sample(sequence, k) : sequence: 리스트, 집합, range() 등 random의 범위가 될 sequence 입력 / k: 반환될 리스트의 크기 입력
+- random.choice(sequence) for i in range(k)
+
+ 
 
