@@ -306,3 +306,4 @@ operation = input("실행할 리스트 연산을 입력하세요 (예: 'data.app
 eval(operation)
 print(f'수정된 데이터 : {data}')
 ```
+* **startswith() 함수는 문자열이 지정된 접두사로 시작하는지 여부를 확인합니다.**
