@@ -257,4 +257,10 @@ user_input = input("")
 string_statistice(user_input)
 ```
 
+* lambda 함수 사용 시
+→ map : / x : (수식) / 수식의 대한 **결과값을 저장**한다.
+→ filter : / x: (조건) / **조건에 해당하는 값을 저장**한다.
+
+
+
 
