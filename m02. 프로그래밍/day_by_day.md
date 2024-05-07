@@ -56,28 +56,28 @@ Tuple의 형태 : ( ) / 소괄호가 없는 경우도 type : Tuple
 s1 = {10,20,30,40,50}
 s2 = {40,70,80,90,100}
 
-# 합집합 연산자 | : Shift + \
+### 합집합 연산자 | : Shift + \
 result = s1 | s2
 print(result)
 
-# 합집합 연산자 union
+### 합집합 연산자 union
 result = s1.union(s2)
 print(result)
 
-# 교집합 연산자 & : Shift + 7
+### 교집합 연산자 & : Shift + 7
 result = s1 & s2
 print(result)
 
 result = s1.intersection(s2)
 print(result)
 
-# 차집합
+### 차집합
 result = s1 - s2
 print(result)
 result = s2.difference(s1)
 print(result)
 
-# 대칭 차집합
+### 대칭 차집합
 result = s1 ^ s2
 print(result)
 result = s1.symmetric_difference(s2)
@@ -98,7 +98,7 @@ print(result)
 - 소문자 : word = word.lower()
 - 대문자 : word = word.upper()
 
-# 복합 대입 연산자
+### 복합 대입 연산자
 
 +=  -=  *=  /=  %=
 
@@ -125,7 +125,7 @@ print(result)
 
 **5일차**
 
-# 문자열을 , . ? ! (공백) 이 있는 리스트로 만들 때
+### 문자열을 , . ? ! (공백) 이 있는 리스트로 만들 때
 
 import re
 re.split('[ , . ? !]+' 문자열변수) 를 사용한다.
@@ -168,7 +168,7 @@ print(data_list)
 #### result
 [75, 20, 98, 60, 5, 47, 4, 21, 90, 52]
 ```
-# f-string 내에서 { } 사용 시 변수 뿐만 아니라 Python 표현식도 올 수 있음.
+### f-string 내에서 { } 사용 시 변수 뿐만 아니라 Python 표현식도 올 수 있음.
 
 ## 표현식(Expression)
 - 하나 이상의 값, 변수, 연산자, 함수 호출 등을 조합하여 평가(evaluate)될 때 값을 생성하거나 반환하는 코드 
@@ -261,6 +261,38 @@ string_statistice(user_input)
 → map : / x : (수식) / 수식의 대한 **결과값을 저장**한다.
 → filter : / x: (조건) / **조건을 만족하는 x값을 저장**한다.
 
+* 코드로 URL 가져오기 
+```
+import requests
+from bs4 import BeautifulSoup
 
+def fetch_website_content(url):
+  # URL에서 데이터를 가져옵니다.
+  response = requests.get(url)
+  if response.status_code == 200:
+      soup = BeautifulSoup(response.text, 'html.parser')
+      
+      print("Page Title : ", soup.title.string if soup.title else "No title found")
+  else:
+      print("Failed to retrieve the webpage")
+      print("Status code:", response.status_code)
 
+if __name__ == "__main__":       
 
+  url = input("")
+  fetch_website_content(url)
+```
+
+* 실행 가능한 숫자를 입력받아서 (숫자,연산 기호) 계산해주는 명령어 : eval
+```
+print(eval(input('연산을 입력하세요. : ')))
+
+expression = input('계산할 수식을 입력하세요. : ')
+result = eval(expression)
+print(f"계산 결과 : {result}")
+
+data = [1,2,3,4,5]
+operation = input("실행할 리스트 연산을 입력하세요 (예: 'data.append(6), 'data.pop()): > ")
+eval(operation)
+print(f'수정된 데이터 : {data}')
+```
