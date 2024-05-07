@@ -263,6 +263,16 @@ string_statistice(user_input)
 
 * 코드로 URL 가져오기 
 ```
+먼저 requests 패키지와 BeautifulSoup 모듈을 가져옵니다. 이러한 모듈은 각각 HTTP 요청을 보내고 웹 페이지의 HTML을 파싱하는 데 사용됩니다.
+fetch_website_content 함수를 정의합니다. 이 함수는 URL을 입력으로 받아와서 해당 웹페이지의 내용을 가져오고 출력합니다.
+requests.get(url)을 사용하여 해당 URL에 GET 요청을 보냅니다.
+요청이 성공하면(상태 코드 200), BeautifulSoup을 사용하여 HTML을 파싱하고 페이지의 제목을 출력합니다.
+요청이 실패하면(상태 코드가 200이 아닌 경우), 오류 메시지와 함께 상태 코드를 출력합니다.
+코드는 마지막으로 사용자로부터 URL을 입력 받고, 이 URL을 fetch_website_content 함수에 전달하여 해당 웹사이트의 내용을 가져옵니다.
+코드를 실행하면 사용자가 입력한 URL의 웹페이지 제목이 출력됩니다. 만약 페이지가 존재하지 않거나 접근할 수 없는 경우 오류 메시지가 출력됩니다.
+```
+
+```
 import requests
 from bs4 import BeautifulSoup
 
