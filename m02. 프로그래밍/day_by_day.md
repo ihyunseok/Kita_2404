@@ -232,20 +232,21 @@ while True:
 def string_statistice(user_input):
     length = len(user_input)
 
-#### 가장 자주 등장하는 문자 찾기
+    # 가장 자주 등장하는 문자 찾기
     from collections import Counter
     frequency = Counter(user_input)
     most_common = frequency.most_common(1)[0][0]
-#### 숫자 개수 세기
+
+    # 숫자 개수 세기
     num_count = sum(c.isdigit() for c in user_input)
 
-#### 대문자 개수 세기 
+    # 대문자 개수 세기 
     uppercase_count = sum(c.isupper() for c in user_input)
 
-#### 소문자 개수 세기
+    # 소문자 개수 세기
     lowercase_count = sum(c.islower() for c in user_input)
 
-#### 결과 출력
+    # 결과 출력
     print(f"입력된 문자열의 길이 : {length}")
     print(f"가장 자주 등장하는 문자 : {most_common}")
     print(f"숫자의 갯수 : {num_count}")
