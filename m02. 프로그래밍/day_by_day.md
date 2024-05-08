@@ -316,3 +316,8 @@ print(f'수정된 데이터 : {data}')
   ```
 * 몫과 나머지 메서드
 → divmod(m, n)
+
+* datetime모듈의 utcfromtimestamp함수를 사용하면 unixtimestamp를 datetime 형식으로 변환가능하다.
+  ```
+  datetime.utcfromtimestamp(unix_timestamp)
+  ```
