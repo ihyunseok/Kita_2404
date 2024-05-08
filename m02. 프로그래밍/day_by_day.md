@@ -314,3 +314,5 @@ print(f'수정된 데이터 : {data}')
   ```
   new_words = list(map(str.upper, words))
   ```
+* 몫과 나머지 메서드
+→ divmod(m, n)
