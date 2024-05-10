@@ -321,3 +321,7 @@ print(f'수정된 데이터 : {data}')
   ```
   datetime.utcfromtimestamp(unix_timestamp)
   ```
+
+* **11일차**
+#### 예외처리 방법
+try / except / else / finally(선택) 순으로 처리
